@@ -8,7 +8,7 @@ const app = createApp(App)
 InitPinia(app)
 InitRouter(app)
 
-console.log(import.meta.env, '---env', '222')
+console.log(import.meta.env.VITE_APP_VERSION, '---env')
 
 app.config.errorHandler = (err) => {
   console.log(err)

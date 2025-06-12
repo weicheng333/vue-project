@@ -62,8 +62,7 @@ export default defineConfig(({ command, mode, isSsrBuild, isPreview }) => {
       },
     },
     esbuild: {
-      drop: ['debugger', 'console'],
+      drop: mode in ['development', 'preview'] ? ['debugger', 'console'] : [],
     },
-
   }
 })
