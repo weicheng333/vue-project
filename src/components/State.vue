@@ -1,5 +1,5 @@
 <script setup lang='ts'>
-import { defineProps, nextTick, onMounted, reactive, ref, shallowReactive, toRefs, watch } from 'vue'
+import { defineProps, nextTick, onMounted, reactive, ref, shallowReactive, toRefs } from 'vue'
 import { useCounterStore } from '@/stores/counter'
 
 const { pType } = defineProps({
@@ -38,6 +38,7 @@ onMounted(() => {
     <br>{{ a }}
     <br>{{ countStore.count }}
     <br>{{ countStore.dobuleCount }}
+    <br>{{ pType }}
   </div>
 </template>
 

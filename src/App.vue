@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import ClassAndStyle from './components/ClassAndStyle.vue'
-import Computed from './components/Computed.vue'
-import DetectaPhone from './components/DetectaPhone.vue'
 import ExChangeImg from './components/ExChangeImg.vue'
 import State from './components/State.vue'
 

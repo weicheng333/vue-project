@@ -6,7 +6,7 @@ export default {
   plugins: ['stylelint-less', 'stylelint-order', 'stylelint-prettier'],
   overrides: [
     {
-      files: ['**/*.(html)'],
+      files: ['**/*.html'],
       customSyntax: 'postcss-html',
       // 提取style内部的css 如果安装了postcss-less。可以提取标签上含有less标识的style内部less
       extends: ['stylelint-config-html/html'], // 处理html文件 的css合法 lint规则
@@ -16,7 +16,7 @@ export default {
       extends: ['stylelint-config-standard'], // css书写的版式校验
     },
     {
-      files: ['**/*.(vue)'],
+      files: ['**/*.vue'],
       customSyntax: 'postcss-html',
       extends: ['stylelint-config-standard-vue', 'stylelint-config-html/vue'],
     },
@@ -85,7 +85,7 @@ export default {
       ],
       { severity: 'warning' },
     ],
+    // Add this rule to allow empty sources in Vue components
+    'no-empty-source': null,
   },
-
-  ignoreFiles: ['**/*.js', '**/*.ts', '**/*.jsx', '**/*.tsx'],
 }

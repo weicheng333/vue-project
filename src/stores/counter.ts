@@ -17,5 +17,4 @@ const useCounterStore = defineStore('counter', {
   },
   persist: true,
 })
-
 export { useCounterStore }

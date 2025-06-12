@@ -26,6 +26,7 @@ const watchAbout = watch(
   },
 )
 watchEffect(
+  // eslint-disable-next-line unused-imports/no-unused-vars
   async (onCleanup) => {
     UpperName.value = name.value.toUpperCase()
     console.log(UpperName.value)

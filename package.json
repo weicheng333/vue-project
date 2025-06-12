@@ -13,7 +13,10 @@
     "build-only": "vite build",
     "type-check": "vue-tsc --build",
     "prepare": "husky",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "lint": "pnpm eslint && pnpm stylelint",
+    "eslint": "eslint --fix && eslint",
+    "stylelint": "stylelint \"**/*.{vue,css,less,html}\" --fix && stylelint \"**/*.{vue,css,less,html}\""
   },
   "dependencies": {
     "pinia": "^3.0.1",
@@ -44,6 +47,7 @@
     "husky": "^9.1.7",
     "jsdom": "^26.0.0",
     "less": "^4.3.0",
+    "lint-staged": "^16.1.0",
     "npm-run-all2": "^7.0.2",
     "postcss-html": "^1.8.0",
     "postcss-less": "^6.0.0",
