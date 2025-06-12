@@ -1,0 +1,12 @@
+node_modules/
+dist/
+*.js
+*.ts
+*.jsx
+*.tsx
+*.jpg
+*.png
+*.eot
+*.ttf
+*.woff
+*.json
