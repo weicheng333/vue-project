@@ -13,5 +13,4 @@ console.log(import.meta.env, '---env')
 app.config.errorHandler = (err) => {
   console.log(err)
 }
-
 app.mount('#app')

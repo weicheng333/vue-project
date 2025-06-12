@@ -1,4 +1,4 @@
 export default {
-  '*.{ts,js}': () => [`eslint`],
-  '*.{css,vue}': () => [`stylelint --fix`],
+  '*.{ts,js}': stagedFiles => [`eslint --fix ${stagedFiles.join(' ')}`, `eslint ${stagedFiles.join(' ')}`],
+  '*.{css,vue}': stagedFiles => [`stylelint --fix ${stagedFiles.join(' ')}`, `stylelint ${stagedFiles.join(' ')}`],
 }
