@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div>Color</div>
+  <div>404</div>
 </template>
 
 <style lang='less' scoped>

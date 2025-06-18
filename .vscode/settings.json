@@ -14,17 +14,36 @@
     "source.fixAll.stylelint": "explicit",
     "source.organizeImports": "never"
   },
-  "[less]": {
-    "editor.codeActionsOnSave": {
-      "source.fixAll.stylelint": "explicit",
-      "source.organizeImports": "never"
-    }
+  "[vue]": {
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
   },
   "[css]": {
-    "editor.codeActionsOnSave": {
-      "source.fixAll.stylelint": "explicit",
-      "source.organizeImports": "never"
-    }
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
+  },
+  "[less]": {
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "stylelint.vscode-stylelint"
+
   },
   // Silent the stylistic rules in you IDE, but still auto fix them
   "eslint.useFlatConfig": true,

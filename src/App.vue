@@ -1,18 +1,9 @@
 <script setup lang="ts">
-import ExChangeImg from './components/ExChangeImg.vue'
-import State from './components/State.vue'
-
-const imgUrl = new URL('./img.png', import.meta.url).href
-const heroImg = document.getElementById('hero-img') as (HTMLImageElement | null)
-heroImg && (heroImg.src = imgUrl)
+import { RouterView } from 'vue-router'
 </script>
 
 <template>
-  <ExChangeImg />
-  <!-- <DetectaPhone /> -->
-  <!-- <ClassAndStyle /> -->
-  <State type="bigState" />
-  <!-- <Computed /> -->
+  <RouterView />
 </template>
 
 <style scoped lang="less">
