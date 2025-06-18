@@ -1,5 +1,5 @@
+import path from 'node:path'
 import { fileURLToPath, URL } from 'node:url'
-
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import { visualizer } from 'rollup-plugin-visualizer'
@@ -36,7 +36,7 @@ export default defineConfig(({ command, mode, isSsrBuild, isPreview }) => {
     },
     resolve: {
       alias: {
-        '@': fileURLToPath(new URL('./src', import.meta.url)),
+        '@': path.resolve(__dirname, './src'),
       },
     },
     envDir: fileURLToPath(new URL('./env', import.meta.url)),
@@ -62,8 +62,7 @@ export default defineConfig(({ command, mode, isSsrBuild, isPreview }) => {
       },
     },
     esbuild: {
-      drop: ['debugger', 'console'],
+      drop: mode in ['development', 'preview'] ? ['debugger', 'console'] : [],
     },
-
   }
 })

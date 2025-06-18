@@ -15,6 +15,5 @@
     "nightwatch.conf.*",
     "playwright.config.*",
     "eslint.config.*"
-
   ]
 }
