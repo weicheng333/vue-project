@@ -15,7 +15,7 @@ TypeScript cannot handle type information for `.vue` imports by default, so we r
 ### set Proxy
 
 ```sh
-export https_proxy=http://127.0.0.1:65195
+export https_proxy=http://127.0.0.1:proxyPort
 ```
 
 ### down
